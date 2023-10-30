@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-3">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trocador de cores</title>
+    <style>
+        body{
+            background-color: black;
+            color: white;
+        }
+    </style>
+    <center>
+    <h1><strong>Escolha uma cor!</strong></h1>
+    <br>
+    <br>
+    <h3>e irei trocar a cor da pagina para você, cor:</h3>
+    <input id="backg" type="color" oninput="colorbackg()">
+    <br>
+    <br>
+    <h3>cor da letra: </h3>
+    <input id="letter" type="color" oninput="lettercolor()">
+    </center>
+
+</head>
+
+    
+<body>
+    <script>
+        var color = document.getElementById("backg")
+        var letter = document.getElementById("letter")
+
+        function colorbackg(){
+            document.body.style.backgroundColor = color.value;
+            console.log (color.value);
+        }
+
+        function lettercolor(){
+            document.body.style.color = letter.value;
+            console.log (letter.value);
+        }
+
+    </script>
+</body>
+</html>
